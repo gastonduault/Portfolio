@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+  <!-- <link rel="icon" type="image/png" href="image/regionouestLogo.png" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="styleF.css" />
+  <title>Sécurité des données | info </title>
+  <!-- déclaration du fichier CSS de Bootstrap -->
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9fc8294f3b.js" crossorigin="anonymous"></script>-->
+    <link rel="icon" type="images/png" href="images/regionouestLogo.png" />
+</head>
+
+<div>
+  <div class="container-fluid">
+    <div class="row align-items-center" id="header">
+      <div class="col-12 col-lg-5">
+        <div class="row col-12 col-lg-12 header_logo align-items-center justify-content-around" id="header_logo">
+          <div class="d-none d-lg-block col-lg-3">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row">
+              <h1>RÉGION OUEST</h1>
+            </div>
+            <div class="row">
+              <h6 class="">Gestion Informatique des Hôpitaux</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        VERSION SMARTPHONE
+      -->
+      <nav class="d-lg-none" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+            <a href="index.html">
+              <li>Accueil</li>
+            </a>
+            <hr>
+            <h4>Gestion</h4>
+            <a href="gestPers.html">
+              <li>Gestion de l'hôpital</li>
+            </a>
+            <a href="#">
+              <li>Gestion des patients</li>
+            </a>
+            <hr>
+            <h4>Données médicales</h4>
+            <a href="donMedi.html">
+              <li>Sécurité des données</li>
+            </a>
+            <a href="donMedi.html">
+              <li>Gestion des données</li>
+            </a>
+            <hr>
+            <a href="IA.html">
+              <li>L'IA en médecine</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+      <!--
+        VERSION PC
+      -->
+      <div class="d-none d-lg-block col-lg-7">
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button class="center">Accueil</button></a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Gestion</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="gestPers.html">Gestion de l'hôpital</a>
+                <a class="dropdown-item" href="#">Gestion des patients</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Données médicales</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="donMedi.html">Sécurité des données</a>
+                <a class="dropdown-item" href="#">Gestion des données</a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="IA.html"><button class="center">L'IA en médecine</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="col-lg-12 offset-lg-1" id="cyber">La Sécurité des données</h1>
+          <article class="col-lg-12 offset-lg-1" id="texteCadena">
+
+            <div class="row">
+              <div class="col-lg-10">
+                <h2>Qu'est-ce que la cyber-sécurité ?</h2>
+                <p class="col-lg-10">
+                  Tout d'abord il est important de définir ce qu'est la <span class="motCle"> cyber-sécurité </span>:
+                  <span id="texteCyber">elle désigne l'ensemble des bonnes pratiques et technologies qui peuvent être
+                    utilisés pour protéger les personnes et les actifs informatiques matériels et
+                    immatériels.</span><br /><br>
+                  Les hopitaux n'y échappent pas, étant équiper d'équipements informatique ( ordinateurs ...), ils
+                  doivent donc être protégé.<br><br>
+                  <span class="motCle">Mais comment évaluer leurs protections ?</span> Pour cela il existe 4 critères.
+                </p>
+              </div>
+              <img src="images/cadena.png" alt="cadena" id="cadena">
+            </div>
+
+          </article>
+        </div>
+        <div class="col-lg-3 offset-lg-1" id="sommaire">
+          <div class="main_navbar">
+            <ul>
+              <p>Sommaire</p>
+              <ul><a href="#">
+                  <p>Critères appliqué aux hopitaux</p>
+                </a>
+                <li><a href="#art1">Confidentialité</a></li>
+                <li><a href="#art2">Intégrité</a></li>
+                <li><a href="#art3">Disponibilité</a></li>
+                <li><a href="#art4">Preuve</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        
+        <h1 class="col-lg-12" id="cyber">4 Indicateurs de sécurité</h1>
+      </div>
+
+
+      <article class="col-lg-10 offset-lg-1 zoom art" id="art1">
+        <div class="row">
+            <div class="col-lg-8 art">
+                <h3 id="traitement">Confidentialité</h3>
+            
+            
+              La confidentialité est la propriété qui assure que les biens ne sont accessibles que par des personnes
+              autorisées.
+              <br><br>
+              La confidentialité c'est garantir l'accès des données des patients uniquement aux professionnels sous secret
+              médical. <br>
+              Voici un exemple de ce qu'un défaut de ce critère peut entrainer : <br>
+              Si un test de VIH positif était laissé à la connaissance d'une société d'assurance, il y aurait un préjudice
+              pour le patient ( impossibilité de trouver une assurance, difficulté à trouver un emploi ... ).
+              <br><br>
+              <span class="motCle">En bref :</span> le critère de confidentialité est primordial pour préserver la vie
+              privée des patients et donc, ne pas les pénaliser dans leur vie.    
+           
+            </div>
+            <img src="images/confidentiel.png" alt="condidentialite" id="" class="col-lg-4 imgbody">
+        </div>
+    </article>
+    <article class="col-lg-10 offset-lg-1 zoom art" id="art2">
+        <div class="row">
+          <img src="images/integrite.png" alt="loupe" id="" class="col-lg-4 imgbody">
+            <div class="col-lg-8 art art2">
+                <h3 id="legislation">Intégrité</h3>
+                L'intégrité des biens est la faculté à garantir son exactitude : à ce qu'il ne soit ni altérer par un bug
+                ... Et si le bien venait à être altéré, il doit alors pouvoir être possible de la détecter et de le
+                remodifier.<br><br>
+                L'intégrité c'est garantir que les données médicales ne soient ni altérer par un bug ou par une personne de
+                manière intentionnelle ou non <br>
+                Voici un exemple de ce qu'un défaut d'intégrité peut entrainer : <br>
+                Un défaut d'intégrité peut entrainer des erreurs médicales, si par exemple votre dossier est échangé avec
+                celui d'un autre patient vous pourriez subir une opération qui ne vous concerne pas, ou tout simplement ne pas
+                recevoir votre traitement.
+                <br><br>
+                <span id="motInt">En bref :</span> le critère d'intégrité permet ici un bon suivi des patients : s'assurer que
+                les traitements qu'ils reçoivent soient les bons, tout en tenant un dossier médical à jour et en qui on peut
+                avoir confiance pour un bon suivi médical.
+            </div>
+        </div>
+    </article>
+    <article class="col-lg-10 offset-lg-1 zoom art" id="art3">
+        <div class="row">
+            <div class="col-lg-8 art art3">
+                    <h3 id="performances">Disponibilité</h3>
+                    La disponibilité c'est la capacité à avoir accès à des biens au moment voulu, par les personnes autorisées.<br><br>
+                    La disponibilité des données médicales, c'est la somme des contre-mesures à une panne matérielle ou logicielle
+                    pour s'assurer que les données soient toujours disponibles à fin que les données des patients puissent être
+                    utilisées.<br>
+                    Voici par exemple ce qu'un défaut de disponibilité peut entrainer : <br>
+                    par exemple, lors de la cybers-attaque du CHU de Rouen les données médicales n'étaient plus accessibles. Cette
+                    attaque à mis hors-service les ordinateurs, le CHU est ainsi revenu au papier-crayon : ce qui a entrainé la
+                    paralysie du CHU qui n'acceptait que les patients avec un état de santé préoccupant.
+                    <br><br>
+                    <span id="motDisp">En bref :</span> la disponibilité est un critère vital : s'il n'est pas respecté il peut
+                    paralyser l'ensemble de l'hôpital, quand bien même les autres critères seraient respectés.
+            </div>
+            <img src="images/disponibilite.png" alt="disponibilite" id="" class="col-lg-4 imgbody">
+        </div>
+    </article>
+
+    <article class="col-lg-10 offset-lg-1 zoom art" id="art4">
+      <div class="row">
+        <img src="images/traca.png" alt="tracabilite" class="col-lg-4 imgbody">
+          <div class="col-lg-8 art art3">
+                  <h3 id="performances">Preuve</h3>
+                  La preuve est la possibilité de tracer l'évolution d'un bien, son historique en quelque sorte ( qui l'a
+                  utilisé, quand ...)<br><br>
+                  La preuve est le critère qui permet la traçabilité des actions réalisées et à la conservation des preuves de
+                  ses actions, ce qui permet de savoir qui a pris en charge un patient, qui lui a administré des soins ...
+                  <br>
+                  Voici un exemple de ce qu'un défaut de preuve peut entrainer :
+                  <br>
+                  Si lors d'une opération il y a une complication et que le patient subit des complications il va vouloir
+                  poursuivre l'hôpital : cependant s'il n'y a pas de preuves ou d'indice sur l'auteur du document de santé ayant
+                  provoqué une erreur médicale lors d'un patient alors il y aura une impossibilité de remonter à la personne
+                  responsable. <br><br>
+                  <span id="motPre">En bref :</span>
+                  La preuve sert donc à pouvoir garantir aux patients une certaine sécurité, du fait de la traçabilité des
+                  données.
+          </div>
+          
+      </div>
+  </article>
+        <article class="row col-lg-10 offset-lg-1 art" id="source">
+
+            <h4>Source :</h4>
+            <ul>
+                <li><a href ="https://securid.novaclic.com/securite-internet/les-criteres-de-classification-de-l%E2%80%99information-dicp.html">securId</a></li>
+                <li><a href="https://www.digitalforallnow.com/securite-donnees-sante-cedric-cartau/">DigitalForAllNow</a></li>
+                <li><a href="https://www.dsih.fr/article/3490/ou-en-est-on-de-la-securite-des-donnees-patients.html">Dsih</a></li>
+            </ul>
+        </article>
+  
+
+<aside>
+  <a href="#header" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+    <!-- <i class="fas fa-chevron-up fa-2x"></i> -->
+    <img src="images/fleche.png" alt="fleche" id="fleche">
+  </a>
+</aside>
+<!-------- FOOTER ------------>
+<footer class="row">
+  <section class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-4 foot">
+        <h3>Nous contacter</h3>
+        <adress class="col-lg-5">
+          <div class="row"></div>
+          <div class="row txtart">
+            <p class="texteFooter">06 50 31 90 50 </p>
+          </div>
+          <div class="row txtart">
+            <p class="texteFooter"> <a href="mailto:region.ouest@gmail.com"> region.ouest@gmail.com</a></p>
+          </div>
+        </adress>
+      </div>
+      <div class="col-lg-3 art  foot ">
+        <h3>Nos Réseaux</h3>
+        <div class="row txtart">
+          <p><a href="#" class="lienFooter">
+              <i class="texteFooter"><img src="images/facebook-logo.png" title="facebook logo" alt="logo facebook"></i>
+              Facebook
+            </a></p>
+        </div>
+        <div class="row txtart">
+          <p><a href="#" class="lienFooter">
+              <i class="texteFooter"><img src="images/insta-logo.png" alt="logo insta" title="logo insta"></i>
+              Instagram
+            </a></p>
+        </div>
+        <div class="row txtart">
+          <p><a href="#" class="lienFooter">
+              <i class="texteFooter"><img src="images/twitter-sign.png" alt="twitter logo" title="twitter logo"></i>
+              twitter
+            </a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 foot art">
+        <h3 class="col-lg-9">Réalisé par</h3>
+        <div class="row txtart">
+          <p class="texteFooter">Fretay Clément</p>
+        </div>
+        <div class="row txtart">
+          <p class="texteFooter">Hamon Thomas</p>
+        </div>
+        <div class="row txtart">
+          <p class="texteFooter">Duault Gaston</p>
+        </div>
+      </div>
+      <div class="col-lg-2  art " id="logoFooter">
+        <div class="vertical-align-center logo">
+          <a href="index.html"><img src="images/regionouestLogo.png" height="100px" class="rounded" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<!------- ASIDE --------->
+</div>
+</body>
+
+</html>

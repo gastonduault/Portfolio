@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hopito</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styleF.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="images/png" href="images/regionouestLogo.png" />
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9fc8294f3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row align-items-center" id="header">
+      <div class="col-12 col-lg-5">
+        <div class="row col-12 col-lg-12 header_logo align-items-center justify-content-around" id="header_logo">
+          <div class="d-none d-lg-block col-lg-3">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row">
+              <h1>RÉGION OUEST</h1>
+            </div>
+            <div class="row">
+              <h6 class="">Gestion Informatique des Hôpitaux</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+          VERSION SMARTPHONE
+      -->
+      <nav class="d-lg-none" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+            <a href="index.html">
+              <li>Accueil</li>
+            </a>
+            <hr>
+            <h4>Gestion</h4>
+            <a href="gestPers.html">
+              <li>Gestion de l'hôpital</li>
+            </a>
+            <a href="#">
+              <li>Gestion des patients</li>
+            </a>
+            <hr>
+            <h4>Données médicales</h4>
+            <a href="donMedi.html">
+              <li>Sécurité des données</li>
+            </a>
+            <a href="donMedi.html">
+              <li>Gestion des données</li>
+            </a>
+            <hr>
+            <a href="IA.html">
+              <li>L'IA en médecine</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+      <!-- 
+          VERSION PC
+    -->
+      <div class="d-none d-lg-block col-lg-7">
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button class="center">Accueil</button></a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Gestion</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="gestPers.html">Gestion de l'hôpital</a>
+                <a class="dropdown-item" href="#">Gestion des patients</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Données médicales</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="donMedi.html">Sécurité des données</a>
+                <a class="dropdown-item" href="donMedi.html">Gestion des données</a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="IA.html"><button class="center">L'IA en médecine</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------>
+    <main class="row">
+            <img src="images/doctor.jpg" class="d-block w-100" alt="..." height="1000px" id="fond">
+            <div class="container-fluid" id="l1">
+                <div class="row justify-content-center" id="ligne">
+                    <div class="col-lg-2 style_prevu_kit" id="n1">
+                        <a href="donMedi.html"> <img src="images/cadena.png" alt="cadena"> </a>
+                        <a href="donMedi.html" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+                            <h2>Sécurité</h2>
+                        </a>
+        
+                    </div>
+                    <div class="col-lg-2 style_prevu_kit" id="n2">
+                        <a href="IA.html"><img src="images/feedback.png" alt=""></a>
+                        <a href="IA.html" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+                            <h2>IA</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 style_prevu_kit" id="n3">
+                        <a href="gestPers.html"> <img src="images/open-book.png" alt="#"></a>
+                        <a href="gestPers.html" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+                            <h2>Gestion</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 style_prevu_kit" id="n4">
+                        <a href="#Bloc2Art"><img src="images/google-hangouts-logo.png" alt="plus"> </a>
+                        <a href="#Bloc2Art" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+                            <h2>En savoir +</h2>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        
+        
+        
+            <div class="container-fluid" id="Bloc2Art">
+                <article id="art11">
+                    <div class="row">
+                        <img src="images/q1.png" alt="quote" class="col-lg-2" id="quote1" height="150">
+                        <div class="col-lg-8">
+                            <h1 id="titre1"> Qui sommes nous ?</h1>
+                            <p class="col-lg-12" id="p1">
+                             Nous sommes 3 étudiants en 1 première année à l'iut de Lannion au département informatique. C'est dans le cadre de la matière " projet Personnel et Professionnel " que nous réalisons ce site. Ce site est notre premier projet du premier semestre, nous espérons qu'il vous plairat.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="art22">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h1 id="titre2"> Pourquoi ce site ?</h1>
+        
+        
+                            <p class="col-lg-12" id="p2">
+                            Ce site a été concu à travers la problématique suivante :  "Comment l'informatique permet-elle une
+                             meilleure gestion des hôpitaux ?" nous avons choisi cette problématique principalement en raison 
+                             du piratage informatique du CHU de Rouen qui nous a poussé à en savoir davantage. 
+                             Sur ce site nous vous partageons donc nos connaissances sur le sujet. 
+                            </p>
+                        </div>
+                        <img src="images/q3.png" alt="quote" height="150" class="col-lg-2" id="quote2">
+        
+                    </div>
+                </article>
+            </div>
+           
+        
+
+    </main>
+    <aside>
+        <a href="#header" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+          <img src="images/fleche.png" alt="fleche" id="fleche">
+        </a>
+      </aside>
+    <!-------- FOOTER ------------>
+    <footer class="row">
+      <section class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-4 foot smV">
+            <h3>Nous contacter</h3>
+            <adress class="col-lg-5">
+              <div class="row"></div>
+              <div class="row txtart">
+                <p class="texteFooter">06 50 31 90 50 </p>
+              </div>
+              <div class="row txtart">
+                <p class="texteFooter"> <a href="mailto:region.ouest@gmail.com"> region.ouest@gmail.com</a></p>
+              </div>
+            </adress>
+          </div>
+          <div class="col-lg-3 art foot smV">
+            <h3>Nos Réseaux</h3>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/facebook-logo.png" title="facebook logo"
+                      alt="logo facebook"></i>
+                  Facebook
+                </a></p>
+            </div>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/insta-logo.png" alt="logo insta" title="logo insta"></i>
+                  Instagram
+                </a></p>
+            </div>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/twitter-sign.png" alt="twitter logo" title="twitter logo"></i>
+                  twitter
+                </a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 foot art smV">
+            <h3 class="col-lg-9">Réalisé par</h3>
+            <div class="row txtart">
+              <p class="texteFooter">Fretay Clément</p>
+            </div>
+            <div class="row txtart">
+              <p class="texteFooter">Hamon Thomas</p>
+            </div>
+            <div class="row txtart">
+              <p class="texteFooter">Duault Gaston</p>
+            </div>
+          </div>
+          <div class="col-lg-2 art smV" id="logoFooter">
+            <div class="vertical-align-center logo">
+              <a href="index.html"><img src="images/regionouestLogo.png" height="100px" class="rounded" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+</div>
+</body>
+
+</html>

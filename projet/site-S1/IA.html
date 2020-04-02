@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hopito</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styleF.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="images/png" href="images/regionouestLogo.png" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row align-items-center" id="header">
+      <div class="col-12 col-lg-5">
+        <div class="row col-12 col-lg-12 header_logo align-items-center justify-content-around" id="header_logo">
+          <div class="d-none d-lg-block col-lg-3">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row">
+              <h1>RÉGION OUEST</h1>
+            </div>
+            <div class="row">
+              <h6 class="">Gestion Informatique des Hôpitaux</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+          VERSION SMARTPHONE
+      -->
+      <nav class="d-lg-none" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><img src="images/regionouestLogo.png" height="80px" class="rounded" /></a>
+            <a href="index.html">
+              <li>Accueil</li>
+            </a>
+            <hr>
+            <h4>Gestion</h4>
+            <a href="gestPers.html">
+              <li>Gestion de l'hôpital</li>
+            </a>
+            <a href="#">
+              <li>Gestion des patients</li>
+            </a>
+            <hr>
+            <h4>Données médicales</h4>
+            <a href="donMedi.html">
+              <li>Sécurité des données</li>
+            </a>
+            <a href="donMedi.html">
+              <li>Gestion des données</li>
+            </a>
+            <hr>
+            <a href="IA.html">
+              <li>L'IA en médecine</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+      <!-- 
+          VERSION PC
+    -->
+      <div class="d-none d-lg-block col-lg-7">
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button class="center">Accueil</button></a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Gestion</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="gestPers.html">Gestion de l'hôpital</a>
+                <a class="dropdown-item" href="#">Gestion des patients</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="#"><button class="center">Données médicales</button></a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="donMedi.html">Sécurité des données</a>
+                <a class="dropdown-item" href="donMedi.html">Gestion des données</a>
+            </li>
+            <li class="nav-item dropdown center">
+              <a class="nav-link" href="IA.html"><button class="center">L'IA en médecine</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------>
+    <main>
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="col-lg-12 offset-lg-1" id="cyber">L'intelligence artificiel dans la médecine</h1>
+                <article class="col-lg-12 offset-lg-1" id="texteCadena">
+
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <h2>Introduction</h2>
+                            <p class="col-lg-10">
+                                L’informatique est la <span class="motCle">science</span> qui se développe le plus vite. <br/></br>Effectivement, le numérique
+                    s’est imposé rapidement dans le domaine médical afin notamment de pouvoir <span class="motCle">ordonner et stocker</span>
+                    correctement les données des patients ainsi que du personnel, et sn utilité est devenu
+                    primordiale.
+                            </p>
+                        </div>
+                        <img src="images/feedback.png" alt="cadena" id="cadena">
+                    </div>
+
+                </article>
+            </div>
+            <div class="col-lg-3 offset-lg-1" id="sommaire">
+                <div class="main_navbar">
+                    <ul>
+                        <p>Sommaire</p>
+                        <ul> <a href="#titreBulle">
+                                <p>L'intelligence artificiel dans la médecine</p>
+                            </a>
+
+                            <li><a href="#art1">Le traitement des données</a></li>
+                            <li><a href="#art2">La legislation dans le domaine médical</a></li>
+                            <li><a href="#art3">Les performances médicales actuels</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+            <article class="col-lg-10 offset-lg-1 zoom art" id="art1">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3 id="traitement">Le traitement des données</h3>
+                
+                <p class="col-lg-8">
+                    L’infrastructure informatique d’un hôpital est propre à chacun, les données se divisent en 2
+                    parties
+                    <ul>
+                        <li>Les données de facturation regroupe les achats et ventes de produits ainsi que les factures de
+                            consultations.
+                        </li>
+                        <li>Les données cliniques qui contiennent >les dossiers médicales des patients.
+                        </li>
+                    </ul>
+                    Avant l’arrivé des algorithmes l’analyse des données était réalisée manuellement par l’humain.
+                    Aujourd’hui, nous disposons d'algorithme et d’intelligence artificielle pourvu d’une puissance
+                    de calcule beaucoup plus performante que l’humain.<br />
+                    cela permet de :
+                    <ul>
+                        <li>d’organiser les données des patients et du personnel</li>
+                        <li>d’établir un diagnostic</li>
+                        <li>de prévenir une épidémie</li>
+                        <li>De contrôler le matériel</li>
+                    </ul>
+                </p>
+                </div>
+                <img src="images/brain.png" alt="images sur le traitement des données"
+                    title="images sur le traitement des données" height="120" width="120" style="margin: auto;">
+            </div>
+        </article>
+        <article class="col-lg-10 offset-lg-1 zoom art" id="art2">
+            <div class="row">
+                <img src="images/court.png" title="legislation des données" alt="legislatoin des données"
+                    class="col-lg-4 imgbody">
+                <div class="col-lg-8 art art2">
+                    <h3 id="legislation">La legislation de l'intelligence artificielle dans le domaine médical</h3>
+                    Les données des patients sont sauvegardées, mais il est important que celle-ci soit sécurisées.
+                    De plus, appliquer des lois à l’utilisation de l’intelligence artificiel sur les données de
+                    l’hôpital est essentiel <br /><br />cela permet d’éviter :
+                    <ul>
+                        <li>l’atteinte à la vie privée et violation du secret professionnel</li>
+                        <li>la disparition de certains emplois </li>
+                        <li>la déshumanisation de la relation entre le patient et le personnel</li>
+                        <li>L’homme ne pourra pas toujours garder la main sur les algorithmes.</li>
+                    </ul>
+                    Le CNOM est un organisme professionnel, administratif et juridictionnel de défense et de
+                    régulation de la profession médicale, il a pour but de faire travailler le personnel médical
+                    dans les meilleurs conditions possibles.
+                    La protection des données est légiférée par le CNIL qui impose des limites à cette technologie.
+                </div>
+            </div>
+        </article>
+        <article class="col-lg-10 offset-lg-1 zoom art" id="art3">
+            <div class="row">
+                <div class="col-lg-8 art art3">
+                        <h3 id="performances">Les performances médicales actuels</h3>
+                        L’intelligence artificiel est actuellement utilisée pour:
+
+                        <ul>
+                            <li>aide au diagnostic
+                            </li>
+                            <li>chirurgie robotique
+                            </li>
+                            <li>réalité virtuelle
+                            </li>
+                            <li>tests génétiques
+                                <ul>
+                                    <li>permet de déterminer le taux de survie pour certain cancers</li>
+                                </ul>
+                            </li>
+                            <li>dans le domaine de la recherche
+                            </li>
+                            <li>imprimantes 3D
+                                <ul>
+                                    <li>permet de réaliser des dispositifs médicaux</li>
+                                </ul>
+                            </li>
+                            <li>une exploitation des données à grande échelle (BIG DATA)</li>
+                            <li>prothèse intelligente
+                            </li>
+                        </ul>
+                </div>
+                <img src="images/care.png" title="images performnce" class="col-lg-4 imgbody">
+            </div>
+        </article>
+            <article class="row col-lg-10 offset-lg-1 art" id="source">
+
+                <h4>Source :</h4>
+                <ul>
+                    <li>Le Figaro</li>
+                    <li>Le monde</li>
+                    <li>INSERM (Institut national de la santé et de la recherche médicale)</li>
+                    <li>Le journal du médecin</li>
+                </ul>
+            </article>
+        
+
+    </main>
+    <aside>
+        <a href="#header" style="display: block ; width:100% ;height:100%;text-decoration: none; color: white;">
+          <img src="images/fleche.png" alt="fleche" id="fleche">
+        </a>
+      </aside>
+    <!-------- FOOTER ------------>
+    <footer class="row">
+      <section class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-4 foot">
+            <h3>Nous contacter</h3>
+            <adress class="col-lg-5">
+              <div class="row"></div>
+              <div class="row txtart">
+                <p class="texteFooter">06 50 31 90 50 </p>
+              </div>
+              <div class="row txtart">
+                <p class="texteFooter"> <a href="mailto:region.ouest@gmail.com"> region.ouest@gmail.com</a></p>
+              </div>
+            </adress>
+          </div>
+          <div class="col-lg-3 art  foot ">
+            <h3>Nos Réseaux</h3>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/facebook-logo.png" title="facebook logo"
+                      alt="logo facebook"></i>
+                  Facebook
+                </a></p>
+            </div>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/insta-logo.png" alt="logo insta" title="logo insta"></i>
+                  Instagram
+                </a></p>
+            </div>
+            <div class="row txtart">
+              <p><a href="#" class="lienFooter">
+                  <i class="texteFooter"><img src="images/twitter-sign.png" alt="twitter logo" title="twitter logo"></i>
+                  twitter
+                </a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 foot art">
+            <h3 class="col-lg-9">Réalisé par</h3>
+            <div class="row txtart">
+              <p class="texteFooter">Fretay Clément</p>
+            </div>
+            <div class="row txtart">
+              <p class="texteFooter">Hamon Thomas</p>
+            </div>
+            <div class="row txtart">
+              <p class="texteFooter">Duault Gaston</p>
+            </div>
+          </div>
+          <div class="col-lg-2  art " id="logoFooter">
+            <div class="vertical-align-center logo">
+              <a href="index.html"><img src="images/regionouestLogo.png" height="100px" class="rounded" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+</div>
+</body>
+
+</html>
