@@ -15,6 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    display: block;
+}
+
 
 /*---------------------header----------------------------------------*/
 
@@ -24,7 +28,7 @@ header {
     border-bottom: 100px solid #FFF;
     border-left: 200px solid transparent;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 header h1 {
@@ -43,7 +47,7 @@ header p {
 }
 
 .titre {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .profil {
@@ -165,7 +169,7 @@ header span:nth-child(4) {
 
 .btn {
     font-size: 2em;
-    margin-right: 40px;
+    margin-right: 80px;
     font-family: Quicksand
 }
 
@@ -294,14 +298,13 @@ a.animated-button.victoria-three:hover:after {
 
 section {
     position: absolute;
-    margin: 0px;
-    left: 0px;
-    right: 0px;
 }
 
 .art0 {
     background: transparent;
     -webkit-user-select: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #particles-js {
@@ -315,7 +318,9 @@ section {
     border-top: 100px solid #FFF;
     border-right: 200px solid transparent;
     border-bottom: 100px solid #FFF;
-    min-height: 570px;
+    min-height: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #carouselExampleIndicators {
@@ -324,7 +329,7 @@ section {
 }
 
 .imgcarousel {
-    padding-left: 110px;
+    padding-left: 130px;
 }
 
 .txtcarousel h4 {
@@ -352,20 +357,21 @@ section {
     padding-top: 20px;
     text-align: center;
     color: #FFF;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .art2 {
     background: transparent;
     -webkit-user-select: none;
-    padding-bottom: 20px;
+    margin-bottom: 0px;
     text-align: left;
     font-size: 1.25em;
     padding-left: 80px;
+    padding-top: 10px;
 }
 
 .art2 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #355B8C;
     text-align: left;
 }
@@ -384,7 +390,7 @@ section {
 
 .art6 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .art6 img {
@@ -401,6 +407,7 @@ footer {
     color: #FFF;
     width: 100%;
     height: 100%;
+    margin-top: 90px;
 }
 
 footer i {
