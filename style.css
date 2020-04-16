@@ -298,6 +298,7 @@ a.animated-button.victoria-three:hover:after {
 
 section {
     position: absolute;
+    order: 1;
 }
 
 .art0 {
@@ -405,8 +406,6 @@ footer {
     border-left: 200px solid transparent;
     background-color: #355B8C;
     color: #FFF;
-    width: 100%;
-    height: 100%;
     margin-top: 90px;
 }
 
@@ -441,11 +440,13 @@ footer a:hover i {
 
 /*------------------------------------------------------media query-----------------------------*/
 
+
+/*
 @media (min-width: 700px) {
     .lienfooter2 {
         display: none;
     }
-}
+}*/
 
 @media (max-width: 990px) {
     .menu {
@@ -455,8 +456,23 @@ footer a:hover i {
         border-bottom: 00px solid #FFF;
         border-left: 00px solid transparent;
     }
+    .titre {
+        padding-top: 30px;
+    }
+    .imgprofil {
+        padding-bottom: 30px;
+    }
     .imgprofil {
         padding-left: 170px;
+    }
+    header h1 {
+        text-align: center;
+    }
+    .art1 {
+        border: 0px;
+    }
+    .art2 {
+        padding-top: 20px;
     }
     .art4 {
         border-bottom: solid 2px #355B8C;
@@ -464,6 +480,14 @@ footer a:hover i {
     }
     .art5 {
         padding-top: 20px;
+    }
+    footer {
+        border-top: 0px;
+        margin-top: 950px;
+    }
+    footer .af:nth-child(1),
+    footer .af:nth-child(2) {
+        padding-bottom: 40px;
     }
 }
 
@@ -473,8 +497,10 @@ footer a:hover i {
     }
 }
 
+
+/*
 @media (max-width: 700px) {
     .lienfooter {
         display: none;
     }
-}
+}*/
