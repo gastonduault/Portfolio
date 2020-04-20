@@ -233,6 +233,7 @@ a.animated-button.victoria-three:after {
     background: #FFF;
     color: #355B8C;
     opacity: .5;
+    border-radius: 4%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -413,10 +414,10 @@ footer i {
     opacity: 0;
 }
 
-.imgfooter,
-.imgfooter:hover {
-    text-decoration: none;
-    color: #FFF;
+footer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 footer a:hover,
@@ -424,12 +425,17 @@ footer a:visited,
 footer a:active,
 footer a:link {
     color: #FFF;
-    font-size: 1.25;
+    font-size: 1.1em;
+    text-decoration: none;
 }
 
 footer a:hover i {
     opacity: 1;
     transition: 0.7s;
+}
+
+.mail {
+    padding-bottom: 20px;
 }
 
 .lienfooter {
@@ -460,8 +466,8 @@ footer a:hover i {
         padding-top: 30px;
     }
     .imgprofil {
-        padding-bottom: 30px;
-        padding-left: 170px;
+        margin-left: auto;
+        margin-right: auto;
     }
     header h1 {
         text-align: center;
@@ -476,12 +482,19 @@ footer a:hover i {
         border-bottom: solid 2px #355B8C;
         border-right: none;
     }
+    .imgcarousel {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .art5 {
         padding-top: 20px;
     }
     footer {
         border-top: 0px;
         margin-top: 1300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer .af:nth-child(1),
     footer .af:nth-child(2) {
