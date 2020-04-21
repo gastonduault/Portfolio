@@ -51,7 +51,7 @@ header p {
 }
 
 .profil {
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .logo {
@@ -233,7 +233,7 @@ a.animated-button.victoria-three:after {
     background: #FFF;
     color: #355B8C;
     opacity: .5;
-    border-radius: 4%;
+    border-radius: 7%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -410,6 +410,11 @@ footer {
     margin-top: 90px;
 }
 
+.lienfooter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 footer i {
     opacity: 0;
 }
@@ -438,21 +443,22 @@ footer a:hover i {
     padding-bottom: 20px;
 }
 
-.lienfooter {
+.lienfooter2 {
     padding-top: 20px;
+}
+
+.lienfooter2 a {
     padding-bottom: 20px;
 }
 
 
 /*------------------------------------------------------media query-----------------------------*/
 
-
-/*
 @media (min-width: 700px) {
     .lienfooter2 {
         display: none;
     }
-}*/
+}
 
 @media (max-width: 990px) {
     .menu {
@@ -468,6 +474,7 @@ footer a:hover i {
     .imgprofil {
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 20px;
     }
     header h1 {
         text-align: center;
@@ -492,13 +499,7 @@ footer a:hover i {
     footer {
         border-top: 0px;
         margin-top: 1300px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    footer .af:nth-child(1),
-    footer .af:nth-child(2) {
-        padding-bottom: 40px;
+        text-align: left;
     }
 }
 
@@ -508,10 +509,8 @@ footer a:hover i {
     }
 }
 
-
-/*
 @media (max-width: 700px) {
     .lienfooter {
         display: none;
     }
-}*/
+}
