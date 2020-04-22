@@ -52,6 +52,8 @@ header p {
 
 .profil {
     border-radius: 50%;
+    border: #FFF 2px;
+    border-style: dashed;
 }
 
 .logo {
@@ -311,7 +313,7 @@ section {
 
 #particles-js {
     width: 100%;
-    height: 1110px;
+    height: 1350px;
     background-color: #FFF;
 }
 
@@ -373,7 +375,7 @@ section {
 }
 
 .art2 h3 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #355B8C;
     text-align: left;
 }
@@ -392,7 +394,7 @@ section {
 
 .art6 {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 .art6 img {
@@ -407,7 +409,7 @@ footer {
     border-left: 200px solid transparent;
     background-color: #355B8C;
     color: #FFF;
-    margin-top: 90px;
+    margin-top: 0px;
 }
 
 .lienfooter {
@@ -500,6 +502,9 @@ footer a:hover i {
         border-top: 0px;
         margin-top: 1300px;
         text-align: left;
+    }
+    .lienfooter2 img {
+        display: none;
     }
 }
 
