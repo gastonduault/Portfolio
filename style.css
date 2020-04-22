@@ -157,6 +157,13 @@ header span:nth-child(4) {
 .descriptif2 {
     white-space: nowrap;
     letter-spacing: .10em;
+    animation: typing 2.75s steps(30, end), blink-caret .5s step-end;
+    overflow: hidden;
+}
+
+.descriptif3 {
+    white-space: nowrap;
+    letter-spacing: .10em;
     opacity: 0;
     animation-name: bounceIn;
     animation-duration: 450ms;
