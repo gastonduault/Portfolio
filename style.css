@@ -461,6 +461,29 @@ footer a:hover i {
 }
 
 
+/*---------------------------------------scrollbar---------------------*/
+
+.scrollbar {
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    background: #FFFF;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #FFFF;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #355B8C;
+    width: 0%;
+}
+
+
 /*------------------------------------------------------media query-----------------------------*/
 
 @media (min-width: 700px) {
