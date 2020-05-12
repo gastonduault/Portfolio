@@ -417,6 +417,7 @@ footer {
     background-color: #355B8C;
     color: #FFF;
     margin-top: 0px;
+    font-family: Quicksand;
 }
 
 .lienfooter {
@@ -458,6 +459,13 @@ footer a:hover i {
 
 .lienfooter2 a {
     padding-bottom: 20px;
+}
+
+.copyright {
+    text-align: left;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 
