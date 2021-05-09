@@ -19,7 +19,9 @@ main {
     display: block;
 }
 
-
+.appear{
+    opacity: 0;
+}
 /*---------------------header----------------------------------------*/
 
 header {
@@ -56,74 +58,32 @@ header p {
     border-style: dashed;
 }
 
-.logo {
-    margin-top: 10px;
+.logo1, .logo2{
     position: fixed;
-    top: 0px;
-    left: 15px;
+    top: 5px;
+    left: 5px;
     z-index: 200;
 }
 
-
-/*---------------------logo----------------------*/
-
-.outer-circle {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    border-radius: 50%;
-    animation: rotate 3s linear infinite;
-    z-index: 200;
+.logo2{
+    opacity: 0;
 }
 
-.outer-circle span {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    border-radius: 50%;
-    z-index: 200;
+.logo a:hover .logo1{
+    opacity: 0;
 }
 
-header span:nth-child(1) {
-    filter: blur(5px);
-    z-index: 200;
+.logo a:hover .logo2{
+    transform: rotateZ(314deg);
+    transition: 1s;
+    opacity: 1;
 }
 
-header span:nth-child(2) {
-    filter: blur(10px);
-    z-index: 200;
-}
 
-header span:nth-child(3) {
-    filter: blur(25px);
-    z-index: 200;
+.logo img{
+    transform: rotateZ(-360deg);
+    transition: 1s;
 }
-
-header span:nth-child(4) {
-    filter: blur(150px);
-    z-index: 200;
-}
-
-.inner-circle {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    background-image: url(images/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 2px;
-    left: 2px;
-    z-index: 210;
-}
-
-@keyframes rotate {
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
 
 /*------------descriptif profil-------------*/
 
@@ -262,49 +222,10 @@ a.animated-button.victoria-three:hover:after {
 
 .comp1 {
     text-align: center;
-    opacity: 0;
-    animation-name: bounceIn;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
     font-size: 1.25em;
     display: inline-block;
 }
 
-.comp1:nth-child(1) {
-    animation-delay: 0.45s;
-}
-
-.comp1:nth-child(2) {
-    animation-delay: 0.75s;
-}
-
-.comp1:nth-child(3) {
-    animation-delay: 0.95s;
-}
-
-.comp1:nth-child(4) {
-    animation-delay: 1.15s;
-}
-
-@keyframes bounceIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.3) translate3d(0, 0, 0);
-    }
-    50% {
-        opacity: 0.9;
-        transform: scale(1.1);
-    }
-    80% {
-        opacity: 1;
-        transform: scale(0.89);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) translate3d(0, 0, 0);
-    }
-}
 
 section {
     position: absolute;
@@ -320,7 +241,7 @@ section {
 
 #particles-js {
     width: 100%;
-    height: 1350px;
+    height: 1750px;
     background-color: #FFF;
 }
 
@@ -334,13 +255,45 @@ section {
     padding-bottom: 30px;
 }
 
+.TypeProjet {
+    color: #FFF;
+    font-size: 1.3em;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    border-bottom: #FFF solid 1px;
+    border-right: #FFF solid 1px;
+    padding-right: 5px;
+}
+
 #carouselExampleIndicators {
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 70px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 220px;
+}
+
+#carouselExampleIndicators2 .carousel-inner {
+    height: 250px;
 }
 
 .imgcarousel {
     padding-left: 130px;
+}
+
+.imgzelda{
+    margin-top: 20px;
+    border-radius: 5px 5px;
+}
+
+.logoBanking{
+    border-radius: 5px 5px;
+}
+
+.imgRegionOuest{
+    border-radius: 5px 5px;
 }
 
 .txtcarousel h4 {
@@ -363,6 +316,7 @@ section {
     color: #FFF;
     padding-left: 20px;
 }
+
 
 #projet {
     padding-top: 20px;

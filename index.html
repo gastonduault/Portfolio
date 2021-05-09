@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>DUAULT Gaston</title>
-    <!-- déclaration du fichier CSS de Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -17,32 +15,33 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/250e8bd947.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/regionouestLogo.png" />
-    <script type="text/javascript" src="java.js"></script>
-    <link rel="icon" type="images/png" href="images/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/java.js"></script>
+    <link rel="icon" type="images/png" href="images/logo.png" width="50px" />
 </head>
 
-<header>
+<header id="top">
     <div class="container-fluid">
         <div class="row">
-            <div class="logo menu">
-                <div class="outer-circle">
-                    <div class="inner-circle">
-                    </div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div class="logo appear"
+                    data-delai="100">
+                <a href="#top">
+                    <img src="images/logo.png" width="60px" class="logo1"/>
+                    <img src="images/logoHover.png" width="70px" class="logo2"/>
+                </a>
             </div>
             <div class="col-lg-12 menubtn header">
                 <nav>
-                    <a href="#projet" class="btn btn-sm animated-button victoria-three">
+                    <a href="#projet" class="btn btn-sm animated-button victoria-three appear"
+                    data-delai="200">
                         Projets
                     </a>
-                    <a href="#propos" class="btn btn-sm animated-button victoria-three btd1">
+                    <a href="#propos" class="btn btn-sm animated-button victoria-three btd1 appear"
+                    data-delai="300">
                         Profil
                     </a>
-                    <a href="#contact" class="btn btn-sm animated-button victoria-three">
+                    <a href="#contact" class="btn btn-sm animated-button victoria-three appear"
+                    data-delai="400">
                         Contact
                     </a>
                 </nav>
@@ -50,10 +49,11 @@
         </div>
         <div class="row titre">
             <div class="imgprofil">
-                <img src="images/profil2.png" height="155px" width="165px" class="profil">
+                <img src="images/profil2.png" height="155px" width="165px" class="profil appear"
+                    data-delai="700">
             </div>
             <div class="col-lg-7">
-                <h1>Gaston DUAULT</h1>
+                <h1 class="appear"data-delai="900">Gaston DUAULT</h1>
                 <p class="descriptif">Etudiant en 1ère année </p>
                 <p class="descriptif2">IUT Informatique à Lannion </p>
                 <p class="descriptif3">Futur développeur !</p>
@@ -67,33 +67,34 @@
         <div id="particles-js">
             <section>
                 <article class="row col-lg-12 art0">
-                    <div class="col-lg-3 comp1">
+                    <div class="col-lg-3 comp1 appear"data-delai="300">
                         <div class="row justify-content-center imgmonitor">
                             <img src="images/monitor.png" height="95Opx" width="95Opx" class="imgcomp">
                         </div>
-                        <p>Développement Web (HTML/CSS/JS)<br /> CMS</p>
+                        <p class="appear" data-delai="200">Développement Web (HTML/CSS/JS)<br />CMS Wordpress</p>
                     </div>
-                    <div class="col-lg-3 comp1">
+                    <div class="col-lg-3 comp1 appear"data-delai="500">
                         <div class="row justify-content-center">
                             <img src="images/project.png" height="95px" width="95px" class="imgcomp">
                         </div>
-                        <p>Gestion de projet, Diagramme &amp; Maquettage</p>
+                        <p class="appear" data-delai="400">Gestion de projet, Diagramme &amp; Maquettage</p>
                     </div>
-                    <div class="col-lg-3 comp1">
+                    <div class="col-lg-3 comp1 appear"data-delai="700">
                         <div class="row justify-content-center">
                             <img src="images/coding.png" height="96px" width="96px" class="imgcomp">
                         </div>
-                        <p>C/C++, Java, Python, SQL, Bash, AWK, Js</p>
+                        <p class="appear" data-delai="600">C/C++, Java, Sql, Bash, Awk, Js, Php, Android studio</p>
                     </div>
-                    <div class="col-lg-3 comp1">
+                    <div class="col-lg-3 comp1 appear"data-delai="900">
                         <div class="row justify-content-center">
                             <img src="images/space.png" height="95px" width="95px" class="imgcomp">
                         </div>
-                        <p>Créativité &amp; graphisme en amélioration</p>
+                        <p class="appear" data-delai="800">Créativité &amp; graphisme en amélioration</p>
                     </div>
                 </article>
                 <article class="row art1 col-lg-12">
-                    <h3 id="projet" class="col-lg-12">Projets</h3>
+                    <h3 id="projet" class="col-lg-12 appear" data-delai="800">Projets</h3>
+                    <h4 class="TypeProjet appear" data-delai="800"><strong>Web</strong></h4>
                     <div class="row col-lg-12">
                         <div id="carouselExampleIndicators" class="carousel slide col-lg-12" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -105,7 +106,26 @@
                                 <div class="carousel-item active">
                                     <div class="row col-lg-12">
                                         <div class="col-lg-4 imgcarousel">
-                                            <img src="images/logoS1.png" height="180px" width="170px" alt="premiere slide">
+                                            <img src="images/Logo-Terre.png" style="height: 160px" alt="deuxième slide" class="appear" data-delai="500">
+                                        </div>
+                                        <div class="col-lg-8 txtcarousel">
+                                            <div class="row appear" data-delai="700">
+                                                <h4>Virtual Link</h4>
+                                            </div>
+                                            <p class="appear" data-delai="900">
+                                                Site vitrine qui répond à la problématique :
+                                                <br/><em>"En quoi les réseaux sociaux ont un rôle d’amplificateur dans nos liens sociaux ?"</em>
+                                                <br />- Utilisation : Figma
+                                                <br />- Languages : HTML, CSS, Js</p>
+                                            <a class="appear" data-delai="800" href="https://gastonduault.github.io/VirtualLink/index.html"><img src="images/download.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row col-lg-12">
+                                        <div class="col-lg-4 imgcarousel">
+                                            <img src="images/logoS1.png" height="180px" width="170px"
+                                                alt="premiere slide" class="imgRegionOuest">
                                         </div>
                                         <div class="col-lg-8 txtcarousel">
                                             <div class="row">
@@ -116,72 +136,147 @@
                                                 <br />"Comment l'informatique a t'il un impact dans les hôpitaux ?"
                                                 <br />- Languages : HTML5, CSS3
                                             </p>
-                                            <br/>
-                                            <a href="https://gastonduault.github.io/projet-S1"><img src="images/download.png"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row col-lg-12">
-                                        <div class="col-lg-4 imgcarousel">
-                                            <img src="projet/f284a776e0318c8e514dba4f9302927d.png" style="height: 180px" alt="deuxième slide">
-                                        </div>
-                                        <div class="col-lg-8 txtcarousel">
-                                            <div class="row">
-                                                <h4>Coffre-Fort Connecté</h4>
-                                            </div>
-                                            <p>- Utilisation : Carte Arduino, Carte Rasberry PI2, Accéléromètre, Gâche à électroaimant, Moteur 12V, Digicode 3x4. <br />- Languages : C++.</p>
                                             <br />
-                                            <a href="projet/soutenance Projet DUAULT Gaston Coffre-fort Connecté.pdf"><img src="images/download.png"></a>
+                                            <a href="https://gastonduault.github.io/projet-S1"><img
+                                                    src="images/download.png"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="row col-lg-12">
                                         <div class="col-lg-4 imgcarousel">
-                                            <img src="images/logoDevBrain.png" style="height: 180px" alt="troisieme slide">
+                                            <img src="images/logoDevBrain.png" style="height: 180px"
+                                                alt="troisieme slide">
                                         </div>
                                         <div class="col-lg-8 txtcarousel">
                                             <div class="row">
                                                 <h4>Devbrain</h4>
                                             </div>
-                                            <p>Projet réalisé en semestre 2 en anglais : concevoir puis créer le site d'un centre de recherches sur l'intelligence artificielle et les robots
+                                            <p>Projet réalisé en semestre 2 en anglais : concevoir puis créer le site
+                                                d'un centre de recherches sur l'intelligence artificielle et les robots
                                                 <br />- Languages : HTML5, CSS3
                                             </p>
                                             <br />
-                                            <a href="https://gastonduault.github.io/devbrain"><img src="images/download.png"></a>
+                                            <a href="https://gastonduault.github.io/devbrain"><img
+                                                    src="images/download.png"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev appear" data-delai="300" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next appear" data-delai="1200" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                    </div>
+                        <h4 class="TypeProjet"><strong>Programmation Avancée</strong></h4>
+                        <div class="row col-lg-12">
+                            <div id="carouselExampleIndicators2" class="carousel slide col-lg-12" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row col-lg-12">
+                                            <div class="col-lg-4 imgcarousel">
+                                                <img src="images/zelda.JPG" width="160px"
+                                                    alt="premiere slide" class="imgzelda appear" data-delai="600">
+                                            </div>
+                                            <div class="col-lg-8 txtcarousel">
+                                                <div class="row appear" data-delai="800">
+                                                    <h4>Zelda</h4>
+                                                </div>
+                                                <p class="appear" data-delai="900">
+                                                    Petit jeu dans l'univers de Zelda, link (le personnage) peut se déplacer, donner des coups d'épées, célébrer et rentrer sans sa maison.
+                                                    <br />- Utilisation : Figma, Gimp (pour les textures)
+                                                    <br />- Languages : C avec la bibliothèque SDL2.0 
+                                                </p>
+                                                <br />
+                                                <a class="appear" data-delai="1200" href="https://github.com/gastonduault/zelda"><img
+                                                        src="images/download.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row col-lg-12">
+                                            <div class="col-lg-4 imgcarousel">
+                                                <img src="projet/f284a776e0318c8e514dba4f9302927d.png"
+                                                    style="height: 180px" alt="deuxième slide">
+                                            </div>
+                                            <div class="col-lg-8 txtcarousel">
+                                                <div class="row">
+                                                    <h4>Coffre-Fort Connecté</h4>
+                                                </div>
+                                                <p>- Utilisation : Carte Arduino, Carte Rasberry PI2, Accéléromètre,
+                                                    Gâche à
+                                                    électroaimant, Moteur 12V, Digicode 3x4. <br />- Languages : C++.
+                                                </p>
+                                                <br />
+                                                <a
+                                                    href="projet/soutenance Projet DUAULT Gaston Coffre-fort Connecté.pdf"><img
+                                                        src="images/download.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row col-lg-12">
+                                            <div class="col-lg-4 imgcarousel">
+                                                <img src="images/logoBanking.png" style="height: 180px"
+                                                    alt="troisieme slide" class="logoBanking">
+                                            </div>
+                                            <div class="col-lg-8 txtcarousel">
+                                                <div class="row">
+                                                    <h4>Banking</h4>
+                                                </div>
+                                                <p>Le logiciel à pour objectif de mieux gérer son budget en aidant à bien visualiser l’évolution de son compte, à planifier les transactions  (dépenses et recettes) et à définir des limites.
+                                                    <br />- Utilisation : Figma, SceneBuilder
+                                                    <br />- Languages : Java, JavaFx, Css, xml
+                                                </p>
+                                                <br />
+                                                <a href=""><img
+                                                        src="images/download.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev appear" data-delai="400" href="#carouselExampleIndicators2" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next appear" data-delai="1500" href="#carouselExampleIndicators2" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                 </article>
                 <article class="row art2 col-lg-12">
-                    <h3 class="col-lg-12" id="propos">Mon profil</h3>
+                    <h3 class="col-lg-12 appear" data-delai="800" id="propos">Mon profil</h3>
                     <div class="row">
                         <div class="col-lg-6 art4">
-                            <p>Etudiant en IUT informatique à Lannion.<br />Je suis futur développeur d'applications et de contenus multimédia.</p>
-                            <ul>
+                            <p class="appear" data-delai="1000">Etudiant en IUT informatique à Lannion.<br />Je suis futur développeur d'applications et
+                                de contenus multimédia.</p>
+                            <ul class="appear" data-delai="1200">
                                 <li>Français : Langue maternelle</li>
                                 <li>Anglais : niveau B1</li>
                                 <li>Premiers secours en équipe de niveau 1 &amp; 2 (PSE1/PSE2), au sein de la SNSM</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 art5">
-                            <p> Je suis passionné par l'informatique, la cybersécurité, <br/>la création.<br /> Je suis avide de nouvelles connaissances et curieux de nouvelles technologies.</p>
-                            <p>Membre d'un groupe de musique, nous organisons des concerts et créons du contenu musical au sein de notre future association.<br /></p>
+                        <div class="col-lg-6 art5 appear" data-delai="1500">
+                            <p> La curiosité est pour moi l’élément moteur de mon évolution dans le développement informatique. <br /> La possibilité de pouvoir utiliser plusieurs langages, notions puis les rassembler pour obtenir un rendu fonctionnel et ergonomique est pour moi une source d’inspiration, d’innovation.</p>
+                            <p>Membre d'un groupe de musique, nous organisons des concerts et créons du contenu musical
+                                au sein de notre future association.<br /></p>
                         </div>
                     </div>
-                    <div class="col-lg-12 art6">
+                    <div class="col-lg-12 art6 appear" data-delai="800">
                         <p>Vous pouvez télécharger mon CV ici :
                             <a href="projet/CV.pdf"><img src="images/portfolio.png"></a>
                         </p>
@@ -201,7 +296,7 @@
             stats.domElement.style.top = '0px';
             document.body.appendChild(stats.domElement);
             count_particles = document.querySelector('.js-count-particles');
-            update = function() {
+            update = function () {
                 stats.begin();
                 stats.end();
                 if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
@@ -219,32 +314,34 @@
         </div>
     </div>
 </main>
-<footer id="contact col-lg-12">
+<footer id="contact">
     <div class="row lienfooter col-lg-12">
         <div class="row col-lg-12 mail">
             <div class="col-lg-4 lmail">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 appear" data-delai="800">
                 <a href="mailto:gas.duault@gmail.com">
                     <i class="imgfooter"><img src="images/mail.png" title="mail logo" alt="logo mail"></i>Mon mail
                 </a>
             </div>
-            <div class="col-lg-4 lmail">
+            <div class="col-lg-4 lmail appear" data-delai="1200">
             </div>
         </div>
-        <div class="col-lg-4 col-md-3">
+        <div class="col-lg-4 col-md-3 appear" data-delai="1500">
             <a href="https://www.facebook.com/gaston.duault.58" class="">
-                <i class="imgfooter"><img src="images/facebook.png" title="facebook logo" alt="logo facebook"></i> Facebook
+                <i class="imgfooter"><img src="images/facebook.png" title="facebook logo" alt="logo facebook"></i>
+                Facebook
             </a>
         </div>
-        <div class="col-lg-4 col-md-3">
+        <div class="col-lg-4 col-md-3 appear" data-delai="1200">
             <a href="https://github.com/gastonduault" class="">
                 <i class="imgfooter"><img src="images/github.png" title="github logo" alt="logo github"></i> GitHub
             </a>
         </div>
-        <div class="col-lg-4 col-md-3">
+        <div class="col-lg-4 col-md-3 appear" data-delai="800">
             <a href="https://www.linkedin.com/in/gaston-duault-6a3ab91a0/" class="">
-                <i class="imgfooter"><img src="images/linkedin.png" title="linkedin logo" alt="logo linkedin"></i> Linkedin
+                <i class="imgfooter"><img src="images/linkedin.png" title="linkedin logo" alt="logo linkedin"></i>
+                Linkedin
             </a>
         </div>
     </div>
@@ -257,7 +354,8 @@
         </div>
         <div class="row col-lg-12">
             <a href="https://www.facebook.com/gaston.duault.58" class="">
-                <i class="imgfooter"><img src="images/facebook.png" title="facebook logo" alt="logo facebook"></i> Facebook
+                <i class="imgfooter"><img src="images/facebook.png" title="facebook logo" alt="logo facebook"></i>
+                Facebook
             </a>
         </div>
         <div class="row col-lg-12">
@@ -267,12 +365,13 @@
         </div>
         <div class="row col-lg-12">
             <a href="https://www.linkedin.com/in/gaston-duault-6a3ab91a0/" class="">
-                <i class="imgfooter"><img src="images/linkedin.png" title="linkedin logo" alt="logo linkedin"></i> Linkedin
+                <i class="imgfooter"><img src="images/linkedin.png" title="linkedin logo" alt="logo linkedin"></i>
+                Linkedin
             </a>
         </div>
     </div>
     <div class="row copyright col-lg-12">
-        <p class="col-lg-12">@Copyright - 2020 - Duault Gaston</p>
+        <p class="col-lg-12">@Copyright - 2021 - Duault Gaston</p>
     </div>
 </footer>
 
