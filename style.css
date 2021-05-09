@@ -124,12 +124,8 @@ header p {
 .descriptif3 {
     white-space: nowrap;
     letter-spacing: .10em;
-    opacity: 0;
-    animation-name: bounceIn;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    display: inline-block;
+    animation: typing 2.75s steps(30, end), blink-caret .5s step-end;
+    overflow: hidden;
     animation-delay: 2.20s;
 }
 
