@@ -237,7 +237,7 @@ section {
 
 #particles-js {
     width: 100%;
-    height: 1750px;
+    height: 2650px;
     background-color: #FFF;
 }
 
@@ -268,7 +268,7 @@ section {
 }
 
 #carouselExampleIndicators .carousel-inner {
-    height: 220px;
+    height: 240px;
 }
 
 #carouselExampleIndicators2 .carousel-inner {
@@ -352,12 +352,33 @@ section {
 .art6 {
     text-align: center;
     padding-top: 70px;
+    border-bottom: #355B8C solid 2px;
 }
 
 .art6 img {
     padding-left: 10px;
 }
 
+
+.art3{
+    color: #355B8C;
+    font-family: Quicksand;
+    text-align: left;
+    margin-top: 70px;
+    padding-left: 80px;
+}
+
+.art3 div{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.art3 div img{
+     margin-right: 4px;
+     margin-bottom: 4px;
+     border-radius: 2px 2px;
+}
 
 /*-----------------------------------FOOTER------------------------------------*/
 
