@@ -471,6 +471,12 @@ footer a:hover i {
     }
 }
 
+@media (max-width: 1229px){
+    .carousel-inner{
+        height: 100000px;
+    }
+}
+
 @media (max-width: 990px) {
     .menu {
         display: none;
